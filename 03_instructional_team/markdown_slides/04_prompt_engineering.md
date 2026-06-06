@@ -21,14 +21,17 @@ $ echo "Data Sciences Institute"
 
 # Main Points
 
----
-
 ## Main Points
 
 1. Prompt engineering is the most accessible adaptation technique: it steers model behavior without changing weights, making it the starting point for most AI applications.
 2. Effective prompts require clear instructions, explicit output formats, and well-chosen examples; vague prompts produce inconsistent, unreliable outputs.
 3. In-context learning (zero-shot and few-shot) allows models to generalize to new tasks at inference time, without retraining.
 4. Chain-of-thought prompting significantly improves reasoning accuracy by forcing the model to show intermediate steps before producing a final answer.
+
+---
+
+## Main Points (cont.)
+
 5. Complex tasks should be decomposed into sequential subtasks: each subtask is simpler to prompt, easier to debug, and can be individually monitored.
 6. Prompts are production artifacts: they must be versioned, separated from code, and systematically tested like any other software component.
 7. Defensive prompt engineering is essential: jailbreaking, prompt injection, and information extraction are real production risks.
@@ -952,6 +955,11 @@ Separating prompts from code is a good practice. Its advantages include:
 2. Effective prompts require clear instructions, explicit output formats, and well-chosen examples; vague prompts produce inconsistent, unreliable outputs.
 3. In-context learning (zero-shot and few-shot) allows models to generalize to new tasks at inference time, without retraining.
 4. Chain-of-thought prompting significantly improves reasoning accuracy by forcing the model to show intermediate steps before producing a final answer.
+
+---
+
+## Main Points (cont.)
+
 5. Complex tasks should be decomposed into sequential subtasks: each subtask is simpler to prompt, easier to debug, and can be individually monitored.
 6. Prompts are production artifacts: they must be versioned, separated from code, and systematically tested like any other software component.
 7. Defensive prompt engineering is essential: jailbreaking, prompt injection, and information extraction are real production risks.
