@@ -23,16 +23,22 @@ $ echo "Data Sciences Institute"
 
 ---
 
+---
+
 ## Main Points
 
 1. Finetuning modifies model weights directly: unlike prompt engineering or RAG, it embeds new behaviors permanently into the model's parameters.
 2. Systematic prompting and RAG should be tried before finetuning; finetuning's high data, compute, and expertise requirements make it a last resort for many use cases.
 3. The key decision heuristic: RAG is for facts (information gaps), finetuning is for form (behavioral or format gaps).
 4. Full finetuning of large models is memory-prohibitive; parameter-efficient finetuning (PEFT, especially LoRA and adapter-based methods) has become the dominant approach.
+
+---
+
+## Main Points (cont.)
+
 5. Quantization (INT8, INT4) dramatically reduces the memory footprint of both inference and training, often with acceptable quality trade-offs.
 6. Smaller finetuned models frequently outperform larger general-purpose models on specialized tasks, making distillation a cost-effective strategy.
 7. Finetuning a model on one task may degrade performance on others; maintaining finetuned models requires ongoing effort as base models evolve.
-
 ---
 
 # Agenda
@@ -267,6 +273,11 @@ $ echo "Data Sciences Institute"
 2. Systematic prompting and RAG should be tried before finetuning; finetuning's high data, compute, and expertise requirements make it a last resort for many use cases.
 3. The key decision heuristic: RAG is for facts (information gaps), finetuning is for form (behavioral or format gaps).
 4. Full finetuning of large models is memory-prohibitive; parameter-efficient finetuning (PEFT, especially LoRA and adapter-based methods) has become the dominant approach.
+
+---
+
+## Main Points (cont.)
+
 5. Quantization (INT8, INT4) dramatically reduces the memory footprint of both inference and training, often with acceptable quality trade-offs.
 6. Smaller finetuned models frequently outperform larger general-purpose models on specialized tasks, making distillation a cost-effective strategy.
 7. Finetuning a model on one task may degrade performance on others; maintaining finetuned models requires ongoing effort as base models evolve.
