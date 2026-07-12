@@ -64,3 +64,5 @@ def search_documents(query):
     )
 
     return results["documents"][0][0]
+
+# Assignment chat service functions

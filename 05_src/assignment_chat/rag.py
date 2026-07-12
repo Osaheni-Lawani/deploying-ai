@@ -3,9 +3,10 @@ load_dotenv(".secrets")
 
 import chromadb
 from sentence_transformers import SentenceTransformer
-from utils.clients import get_client
-from prompts import build_prompt
 
+from utils.clients import get_client
+from assignment_chat.prompts import build_prompt
+from assignment_chat.guardrails import validate_input, validate_output
 
 # Embedding model
 embedding_model = SentenceTransformer(
@@ -48,6 +49,11 @@ def retrieve_context(question, n_results=3):
 
 def answer_question(question, history=None):
 
+    valid, message = validate_input(question)
+
+    if not valid:
+        return message
+
     context = retrieve_context(question)
 
     prompt = build_prompt(
@@ -60,4 +66,6 @@ def answer_question(question, history=None):
         input=prompt
     )
 
-    return response.output_text
+    return validate_output(response.output_text)
+    
+      

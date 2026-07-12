@@ -26,3 +26,26 @@ User Question:
 Answer:
 """
     return prompt
+
+
+"Improve prompt (prompts.py):"
+
+def build_prompt(context, question):
+
+    return f"""
+You are a helpful document assistant.
+
+Answer the question using only the provided context.
+
+If the answer is not contained in the context,
+say:
+"I do not know based on the available documents."
+
+Context:
+{context}
+
+Question:
+{question}
+
+Answer:
+"""

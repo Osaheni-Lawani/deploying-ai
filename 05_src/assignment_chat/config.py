@@ -14,3 +14,5 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL")
 
 API_GATEWAY_KEY = os.getenv("API_GATEWAY_KEY")
+
+# OpenAI and API gateway configuration
