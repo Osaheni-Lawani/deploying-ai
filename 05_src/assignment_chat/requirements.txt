@@ -1,0 +1,6 @@
+gradio
+requests
+chromadb
+sentence-transformers
+pandas
+
